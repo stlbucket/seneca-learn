@@ -1,0 +1,18 @@
+{
+  "name": "walkInService",
+  "version": "1.0.0",
+  "description": "",
+  "main": "senecaServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^4.10.4",
+    "bluebird": "^3.4.7",
+    "seneca": "^3.2.2",
+    "seneca-amqp-transport": "^2.1.0"
+  }
+}
