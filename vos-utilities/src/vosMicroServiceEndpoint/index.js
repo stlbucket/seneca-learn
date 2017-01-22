@@ -1,6 +1,9 @@
-module.exports = {
-  executeHandler: require('./executeHandler'),
-  reportStandardError: require('./reportStandardError'),
-  validateParams: require('./validateParams'),
-  wrapEndpoint: require('./wrapEndpoint')
-};
+// module.exports = {
+//   executeHandler: require('./executeHandler'),
+//   reportStandardError: require('./reportStandardError'),
+//   validateParams: require('./validateParams'),
+//   wrapEndpoint: require('./wrapEndpoint')
+// };
+
+
+module.exports = require('./wrapEndpoint');

@@ -1,4 +1,4 @@
-const wrapEndpoint = require('../../../vosMicroServiceEndpoint/wrapEndpoint');
+const vosMicroServiceEndpoint = require('../../../vosMicroServiceEndpoint');
 const Promise        = require('bluebird');
 const config = require('../../config')();
 
@@ -34,7 +34,7 @@ const endpointDefinition = {
 };
 
 function handler(){
-  wrapEndpoint.bind(this)(endpointDefinition);
+  vosMicroServiceEndpoint.bind(this)(endpointDefinition);
 };
 
 module.exports = handler;

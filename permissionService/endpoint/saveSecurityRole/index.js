@@ -1,6 +1,5 @@
-const wrapEndpoint = require('vos-utilities').vosMicroServiceEndpoint.wrapEndpoint;
+const vosMicroServiceEndpoint = require('vos-utilities').vosMicroServiceEndpoint;
 const Promise        = require('bluebird');
-
 
 function saveSecurityRole(msg, respond) {
   Promise.resolve()
@@ -30,5 +29,5 @@ const endpointDefinition = {
 };
 
 module.exports = function() {
-  wrapEndpoint.bind(this)(endpointDefinition);
+  vosMicroServiceEndpoint.bind(this)(endpointDefinition);
 };

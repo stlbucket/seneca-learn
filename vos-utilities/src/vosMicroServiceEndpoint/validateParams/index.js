@@ -1,6 +1,8 @@
 const Ajv = require('ajv');
 
-function validateParams(schema, msg, pin) {
+function validateParams(endpointDefinition, msg) {
+  const schema = endpointDefinition.schema;
+  const pin = endpointDefinition.pin;
   const ajv   = new Ajv();
   const valid = ajv.validate(schema, msg);
 

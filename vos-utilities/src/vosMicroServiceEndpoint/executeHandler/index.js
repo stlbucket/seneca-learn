@@ -1,15 +1,11 @@
 const validateParams = require('../validateParams');
 
 function executeHandler(endpointDefinition, prior, msg, respond) {
-  const schema = endpointDefinition.schema;
-  const pin = endpointDefinition.pin;
-
-  const validationResult = validateParams(schema, msg, pin);
+  const validationResult = validateParams(endpointDefinition, msg);
 
   if (validationResult === true) {
     prior(msg, (err, result) => {
       if (err) {
-
         respond(null, {
           error: err.toString(),
           stack: err.stack,

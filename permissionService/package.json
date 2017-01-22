@@ -11,10 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ajv": "^4.11.1",
     "bluebird": "^3.4.7",
     "dotenv-safe": "^4.0.3",
-    "moment": "^2.17.1",
     "ramda": "^0.23.0"
   },
   "devDependencies": {
