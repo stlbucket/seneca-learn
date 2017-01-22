@@ -1,4 +1,5 @@
 module.exports = {
   config: require('./config'),
-  endpoint: require('./endpoint')
+  endpoint: require('./endpoint'),
+  senecaServer: require('./senecaServer')
 };

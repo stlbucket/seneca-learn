@@ -2,6 +2,8 @@ require('dotenv-safe').load({
   allowEmptyValues: false
 });
 
-module.exports = require('vos-utilities').vosMicroServer.config({
+const config = require('vos-utilities').vosMicroServer.config({
   extraKey: 'EXTRA VALUE'
 });
+
+module.exports = config;

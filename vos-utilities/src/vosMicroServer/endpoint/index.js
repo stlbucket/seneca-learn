@@ -4,4 +4,4 @@ function configureEndpoint(options){
   this.use(ping);
 }
 
-module.exports = configureEndpoint
+module.exports = configureEndpoint;
