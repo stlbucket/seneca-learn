@@ -10,12 +10,12 @@ const transportType = config.transportType;
 const transportUrl = config.transportUrl;
 const servicePin = config.servicePin;
 
-console.log(transportUrl, transportType, servicePin);
+console.log(transportUrl, transportType, servicePin, config.extraKey);
 
 seneca()
   .use(senecaAmqpTransport)
   .use(vosMicroServer.endpoint)
-  // .use(permissionEndpoint)
+  .use(permissionEndpoint)
   .listen({
     type: transportType,
     url:  transportUrl,
