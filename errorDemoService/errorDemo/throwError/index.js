@@ -1,5 +1,5 @@
 const Promise        = require('bluebird');
-const executeHandler = require('../../../vos-utilities/executeHandler');
+const executeHandler = require('../.././executeHandler');
 
 const endpointDefinition = {
   pin: 'role:errorDemo,cmd:throwError',

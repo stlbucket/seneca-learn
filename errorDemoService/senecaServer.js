@@ -2,7 +2,7 @@
 var seneca = require('seneca');
 const senecaAmqpTransport = require('seneca-amqp-transport');
 const errorDemo = require('./errorDemo');
-const errorHandler = require('../vos-utilities/reportStandardError');
+const errorHandler = require('./reportStandardError');
 
 const transportType = 'amqp';
 const transportUrl = 'amqp://localhost:5672';

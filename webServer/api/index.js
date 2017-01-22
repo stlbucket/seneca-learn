@@ -10,6 +10,8 @@ module.exports = function api(options) {
   this.use(walkIn.removeFromWaitingList);
 
   this.use(permission.checkUserPermission);
+  this.use(permission.saveSecurityRole);
+  this.use(permission.ping);
 
   this.add('init:api', function (msg, respond) {
     this.act('role:web', {
@@ -23,7 +25,10 @@ module.exports = function api(options) {
           'walkIn/removeFromWaitingList': {POST: true},
           'walkIn/claimWalkIn': {POST: true},
 
-          'permission/checkUserPermission': {POST: true}
+          'permission/checkUserPermission': {POST: true},
+          'permission/saveSecurityRole': {POST: true},
+          'permission/ping': {POST: true}
+
         }
       }
     }, respond)

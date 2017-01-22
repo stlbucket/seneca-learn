@@ -1,4 +1,4 @@
-const validateParams = require('./validateParams');
+const validateParams = require('../validateParams');
 
 function executeHandler(endpointDefinition, prior, msg, respond) {
   const schema = endpointDefinition.schema;

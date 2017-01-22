@@ -1,5 +1,5 @@
 const Promise = require('bluebird');
-const validateParams = require('../../../vos-utilities/validateParams');
+const validateParams = require('vos-utilities').vosMicroServiceEndpoint.validateParams;
 
 const schema = {
   "title": "role:walkIn,cmd:addToWaitingList",

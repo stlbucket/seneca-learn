@@ -1,4 +1,4 @@
-const executeHandler = require('./executeHandler');
+const executeHandler = require('../executeHandler/index');
 
 function wrapEndpoint(endpointDefinition) {
   this.add(endpointDefinition.pin, endpointDefinition.handler);
